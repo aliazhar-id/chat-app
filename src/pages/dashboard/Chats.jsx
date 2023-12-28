@@ -152,7 +152,7 @@ const Chats = () => {
             </Typography>
 
             {ChatList.filter((el) => el.pinned).map((el) => (
-              <ChatElement {...el}></ChatElement>
+              <ChatElement {...el} key={el.id}></ChatElement>
             ))}
           </Stack>
 
@@ -162,7 +162,7 @@ const Chats = () => {
             </Typography>
 
             {ChatList.filter((el) => !el.pinned).map((el) => (
-              <ChatElement {...el}></ChatElement>
+              <ChatElement {...el} key={el.id}></ChatElement>
             ))}
           </Stack>
           {/* </SimpleBarStyle> */}
