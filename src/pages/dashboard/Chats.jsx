@@ -144,7 +144,7 @@ const Chats = () => {
           </Stack>
           <Divider />
         </Stack>
-        <Stack spacing={2} direction={'column'} sx={{ flexGrow: 1, overflow: 'auto', height: '100%' }}>
+        <Stack className="custom-scrollbar" spacing={2} direction={'column'} sx={{ flexGrow: 1, overflow: 'auto', height: '100%' }}>
           {/* <SimpleBarStyle timeout={500} clickOnTrack={false}> */}
           <Stack spacing={2.4}>
             <Typography variant="subtitle2" sx={{ color: '#676767' }}>
