@@ -112,8 +112,8 @@ const SideBar = () => {
             }}
           >
             <Stack spacing={1} px={1}>
-              {Profile_Menu.map((el) => (
-                <MenuItem onClick={handleClick}>
+              {Profile_Menu.map((el, index) => (
+                <MenuItem onClick={handleClick} key={index}>
                   <Stack sx={{ width: 100 }} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <span>{el.title}</span>
                     {el.icon}
