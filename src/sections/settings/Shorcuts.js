@@ -98,7 +98,7 @@ const Shorcuts = ({ open, handleClose }) => {
     <>
       <Dialog fullWidth maxWidth={'md'} open={open} onClose={handleClose} keepMounted TransitionComponent={Transition} sx={{ p: 4 }}>
         <DialogTitle>Keyboard Shorcuts</DialogTitle>
-        <DialogContent sx={{ mt: 4 }} className="custom-scrollbar">
+        <DialogContent sx={{ mt: 4 }}>
           <Grid container spacing={3}>
             {list.map(({ key, title, combination }) => (
               <Grid key={key} container item xs={6}>

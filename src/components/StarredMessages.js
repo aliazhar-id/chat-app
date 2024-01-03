@@ -43,7 +43,6 @@ const StarredMessages = () => {
 
         {/* Body */}
         <Stack
-          className="custom-scrollbar"
           sx={{
             height: '100%',
             position: 'relative',
