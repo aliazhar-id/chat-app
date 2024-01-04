@@ -3,6 +3,7 @@ import { Alert, Button, IconButton, InputAdornment, Link, Stack } from '@mui/mat
 import { Eye, EyeSlash } from 'phosphor-react';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { Link as RouterLink } from 'react-router-dom';
 import * as Yup from 'yup';
 import { RHFTextField } from '../../components/hook-form';
 import FormProvider from '../../components/hook-form/FormProvider';
@@ -55,7 +56,7 @@ const LoginForm = () => {
           type={showPassword ? 'text' : 'password'}
           InputProps={{
             endAdornment: (
-              <InputAdornment>
+              <InputAdornment position='end'>
                 <IconButton
                   onClick={() => {
                     setShowPassword(!showPassword);
@@ -70,7 +71,7 @@ const LoginForm = () => {
       </Stack>
 
       <Stack alignItems={'flex-end'} sx={{ my: 2 }}>
-        <Link variant="body2" color="inherit" underline="always">
+        <Link component={RouterLink} to="/auth/reset-password" variant="body2" color="inherit" underline="always">
           Forgot Password?
         </Link>
       </Stack>
