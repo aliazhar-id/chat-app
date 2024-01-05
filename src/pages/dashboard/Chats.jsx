@@ -1,6 +1,8 @@
+import { Box, Button, Divider, IconButton, Stack, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { ArchiveBox, CircleDashed, MagnifyingGlass } from 'phosphor-react';
 import React from 'react';
+import ChatElement from '../../components/ChatElement';
 import { Search, SearchIconWrapper, StyledInputBase } from '../../components/Search';
 import { ChatList } from '../../data';
 // import { SimpleBarStyle } from '../../components/Scrollbar';
